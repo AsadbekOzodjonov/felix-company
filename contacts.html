@@ -95,17 +95,103 @@
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
 
-    <h1>“Contact us”</h1>
-    <input type="text" placeholder="First Name" />
-    <input type="text" placeholder="Last Name" />
-    <input type="text" placeholder="Subject" />
-    <input type="email" id="" placeholder="Email Id" />
-    <button>Send message</button>
+    <div class="contactsText">
+      <h1>Contact Us</h1>
+      <main class="mainsOne">
+        <div class="container">
+          <section class="wrapper">
+            <form class="form" onsubmit="return validateForm(this)">
+         <div class="formDivs">
+          <div class="form-group">
+            <label for="firstname" class="input-label">First Name</label>
+            <input
+              type="text"
+              name="firstname"
+              class="input-field"
+              placeholder="First Name"
+            />
+            <span class="input-check">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </span>
+            <small class="input-alert"></small>
+          </div>
+          <div class="form-group">
+            <label for="fullname" class="input-label">Full Name</label>
+            <input
+              type="text"
+              name="fullname"
+              class="input-field"
+              placeholder="Full Name"
+            />
+            <span class="input-check">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </span>
+            <small class="input-alert"></small>
+          </div> 
+          <div class="form-group">
+            <label for="Subject" class="input-label">Subject</label>
+            <input
+              type="text"
+              name="Subject"
+              class="input-field"
+              placeholder="Subject"
+            />
+            <span class="input-check">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </span>
+            <small class="input-alert"></small>
+          </div>
+          <div class="form-group">
+            <label for="email" class="input-label">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="input-field"
+              placeholder="johnrobert@mail.com"
+            />
+            <span class="input-check">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+            </span>
+            <small class="input-alert"></small>
+          </div>
+         </div>
+              <div class="form-group">
+                <label for="message" class="input-label">Message</label>
+                <textarea
+                  name="message"
+                  class="input-field"
+                  rows="3"
+                  placeholder="Type Messages Here"
+                ></textarea>
+                <span class="input-check">
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                </span>
+                <small class="input-alert"></small>
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  class="input-submit"
+                  value="Send message"
+                />
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
 
     <footer>
       <div>
         <button>
-          <a href="./contacts.html"><img src="./images/ArrowL3.png" alt="" /></a>
+          <a href="./contacts.html"
+            ><img src="./images/ArrowL3.png" alt=""
+          /></a>
         </button>
       </div>
       <div class="footerFlex">
@@ -244,5 +330,6 @@
       </div>
       <p class="copy">Copyright © 2018 • Lift Media Inc.</p>
     </footer>
+    <script src="./js/inputValidation.js"></script>
   </body>
 </html>

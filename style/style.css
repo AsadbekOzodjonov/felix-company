@@ -1325,7 +1325,7 @@
   justify-content: space-around;
 }
 
-input {
+.radioIn {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -2629,6 +2629,127 @@ footer .footerNav a {
   gap: 20px;
   color: #1f1f1f;
 }
+
+.contactsText h1 {
+  text-align: center; 
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 150%; 
+  letter-spacing: 0.032em;
+  color: #1f1f1f;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.mainsOne .wrapper .formDivs { 
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  padding: 2.5rem; 
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  
+  display: grid;
+  grid-template-columns: auto auto; 
+  padding: 10px;
+}
+.mainsOne .form-group {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.25rem;
+  padding-bottom: 1rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.mainsOne .form-group .input-label {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: inherit;
+  color: #121212;
+  text-transform: capitalize;
+  text-rendering: optimizeLegibility;
+}
+.mainsOne .form-group .input-field {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: inherit;
+  width: 100%;
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  margin: 0.25rem 0;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  border-bottom: 2px solid transparent;
+  color: #121212; 
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  text-transform: unset;
+  text-rendering: optimizeLegibility;
+}
+.mainsOne .form-group .input-check i.fas {
+  position: absolute;
+  font-size: 1rem;
+  line-height: inherit;
+  display: block;
+  top: 2.5rem;
+  right: 1rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.mainsOne .form-group .input-alert {
+  position: absolute;
+  display: block;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: inherit;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  color: #f44336;
+}
+.mainsOne .form-group .input-submit {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: inherit;
+  cursor: pointer;
+  /* width: 100%; */
+  margin-left: 45%;
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid #ff5421;
+  outline: none;
+  border-radius: 0.25rem;
+  color: #ff481f;
+  background: none;
+}
+.mainsOne .form-group.success .input-field {
+  border-bottom: 2px solid #2ecc71;
+}
+.mainsOne .form-group.success .input-check i.fa-check-circle {
+  opacity: 1;
+  visibility: visible;
+  color: #2ecc71;
+}
+.mainsOne .form-group.error .input-field {
+  border-bottom: 2px solid #f44336;
+}
+.mainsOne .form-group.error .input-check i.fa-exclamation-circle {
+  opacity: 1;
+  visibility: visible;
+  color: #f44336;
+}
+.mainsOne .form-group.error .input-alert {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*  Contact  */
-
-
